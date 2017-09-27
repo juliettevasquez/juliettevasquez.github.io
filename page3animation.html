@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Animation</title>
+    <style>
+        body {
+            background-color:#ffbb4f;
+        }
+    .basic {
+            width: 200px;
+            height: 200px;
+            background-color: #89f442;
+    }
+    .basichover {
+        background-color: #f7aaf7;
+    }
+    .basic:active {
+        background-color:#f7e7aa;
+    }
+    .square-wrapper {
+        background-color:#0000;
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    .square:hover {
+    	z-index:1;
+    }
+    .square {
+        position: absolute;
+        width:200px;
+        height:200px;
+        align: center;
+        
+    }
+    .one {
+        top: 40px;
+        left: 40px;
+        background-color: lime;
+    }
+    .two {
+        top: 60px;
+        left: 60px;
+        background-color: yellow;
+    }
+    .three {
+        top: 80px;
+        left: 80px;
+        background-color: blue;
+    
+    }
+    .four {
+        top: 100px;
+        left: 100px;
+        background-color: #edaae3;
+    }
+    </style>
+    </head>
+    <body><h4>...with color</h4>
+    <div class="basic"></div>
+    
+    <h4>...with stacking</h4>
+    <div class="square-wrapper">
+        <div class="one square"></div>
+        <div class="two square"></div>
+        <div class="three square"></div>
+        <div class="four square"></div>
+    </div>
+</body>
+</html>
