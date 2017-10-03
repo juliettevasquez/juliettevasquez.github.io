@@ -1,0 +1,22 @@
+html:active {
+  background: red;   
+}
+.picture{
+    width:400;
+    height:400;
+    position: fixed;
+    top:90px;
+    right:200px;
+    background: pink;
+}
+.picture:hover {
+    background-color: yellow;
+    
+}
+.picture:active {
+    transform: rotate(360deg);
+    
+    
+}
+
+    
