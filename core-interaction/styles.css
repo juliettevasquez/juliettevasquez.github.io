@@ -1,0 +1,32 @@
+body{
+  background-color: yellow;
+  font-family: helvetica;
+}
+h1 {
+  background-color: white;
+  color: lightpink;
+  text-align:center;
+  border:10px solid orchid;
+  border-top: 3px solid orchid;
+  border-bottom: 10px solid lightgreen;
+}
+img{
+  width: 350px;
+}
+a{
+  font-size: 80px;
+  color: lightblue;
+}
+#good{
+  background-color: lightpink;
+  text-align: center;
+  border: 15px dotted white;
+}
+#bad{
+  background-color: aqua;
+  border: 15px dashed white;
+}
+.numbers{ color: red;
+}
+.two{ color: orange;}
+.three{ color: lightyellow;}
