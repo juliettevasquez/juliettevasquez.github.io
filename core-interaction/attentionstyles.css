@@ -1,0 +1,34 @@
+body{
+  font-family: helvetica;
+  font-size: 40px;
+background-color: black;
+animation: bgcolor infinite 20s;
+}
+
+#link{
+   text-align: center;
+   padding-top: 120px;
+   padding-left: 120px;
+   padding-right: 120px}
+
+a{
+  color:orange;
+}
+
+ @@keyframes bgcolor {
+   0%
+   {  background:lightpink;}
+   20%
+   {  background: orange;}
+     40%
+     {  background:yellow ;
+       }
+       60%
+       {  background:lightgreen ;
+         }
+         80%
+         {  background: lightblue;
+           }
+           100%
+           {  background: lightpink;
+             }

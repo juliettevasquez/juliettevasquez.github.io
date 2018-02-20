@@ -1,0 +1,64 @@
+body{
+  background-color: #a2bce5;
+  font-family: "castlepressno2";
+  font-size: 380px;
+}
+
+#first{
+  position: absolute;
+  left: 270px;
+  bottom: -200px;
+  }
+#second{
+  position: absolute;
+  left:365px;
+  top: -280px;
+  font-size: 450px;
+}
+#third{
+  position: absolute;
+  left:500px;
+  top: -457px;
+  font-size:450px
+}
+#fourth{
+  position: absolute;
+  left:610px;
+  bottom: -500px;
+  font-size: 420px;
+}
+
+#fifth{
+  color: white;
+  position: absolute;
+  left:500px;
+  top: -620px;
+  -webkit-transform: rotate(-270deg);
+  font-size: 450px;
+}
+#sixth{
+  position: absolute;
+  left: 315px;
+  bottom: -360px;
+  color:white;
+  -webkit-transform: rotate(-270deg);
+  font-size: 500px;
+  }
+
+  #seventh{
+    position: absolute;
+    left:480px;
+    bottom: -500px;
+    color: white;
+    -webkit-transform: rotate(-270deg);
+    font-size: 500px;
+  }
+
+  #eighth{
+    position: absolute;
+    left:315px;
+    bottom: -640px;
+    color: white;
+    -webkit-transform: rotate(-270deg);
+    font-size: 490px;
+  }
