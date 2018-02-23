@@ -1,0 +1,14 @@
+body{font-family: helvetica;
+  background-color: #d2ff63
+}
+
+#first
+{position: absolute;
+top:80px;
+left:50px;
+width: 300px;
+height:500px;}
+
+#second
+{width:100px;
+height:80px;}
