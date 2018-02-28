@@ -2,79 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Fashion Ads</title>
+    <title>fashion ads</title>
+    <link rel="stylesheet"
+    ref="fashionadstyle.css"/>
   </head>
   <body>
-    <ul class="gallery"></ul>
 
-<!-- Lightbox -->
-<div class="lightbox" >
-  <figure></figure>
-</div>
-  </body>
-  <script>
-  $(function (){
+    <div class="toolbar mb2 mt2">
+    <button class="btn fil-cat" href="" data-rel="fullcollection2.html">All</button>
+    <button class="btn fil-cat" data-rel="fashionads.html">Fashion</button>
+    <button class="btn fil-cat" data-rel="flyers">Technology</button>
+    <button class="btn fil-cat" data-rel="bcards">Miscellaneous</button>
+    </div>
 
-  // Cache vars
-  var $gallery = $('.gallery'),
-      $lightbox = $('.lightbox'),
-      $figure = $('figure'),
-      $close = $('.close');
+    <div id="portfolio">
 
-  // Dribbble API shizzz
-  var token = 'b5501bcf1ef8eca0ef89aa3982ca742556d65b1832e077019397bbe0960df317';
-  var url = 'https://api.dribbble.com/v1/shots?sort=recent&access_token=' + token;
+    <div class="tile scale-anm bcards all">
+    <img src="cindy sherman CDG.jpg" alt="" />
+    </div>
+    <div class="tile scale-anm web all">
+    <img src="nikepresto 2000.jpg" alt="" />
+    </div>
+    <div class="tile scale-anm web all">
+            <img src="nike sleazenation mag 200.jpg" alt="" />
+    </div>
+    <div class="tile scale-anm flyers all">
+        <img src="stussy the face 1990.jpg" alt="" />
+    </div>
 
-  // Grab Dribbble popular
-  $.getJSON(url, function(data) {
+    <div class="tile scale-anm flyers all">
+    <img src="wrangler ad 1985.jpg" alt="" />
+    </div>
 
-    $.each(data, function(index, shot) {
+    <div class="tile scale-anm web all">
+        <img src="sherman cdg.jpg" alt="" />
+    </div>
 
-      var thumb = shot.images.teaser,
-          full = shot.images.hidpi || shot.images.normal;
+    <div class="tile scale-anm web all">
+        <img src="sleazenation stussy oct 2001.jpg" alt="" />
+    </div>
 
-      var item = $('<li class="item" data-full="'+full+'"><img src="'+thumb+'" /></li>');
+    <div class="tile scale-anm web all">
+            <img src="supreme.jpg" alt="" />
+    </div>
+    <div class="tile scale-anm web all">
+      <img src="supreme thrasher mag.jpg" alt="" />
+    </div>
+    <div class="tile scale-anm bcards all">
+            <img src="helmutlang.jpg" alt="" />
+    </div>
 
-      $gallery.append(item);
+    </div>
+
+    <div style="clear:both;"></div>
+    </body>
+    <script>
+    $(function() {
+    var selectedClass = "";
+    $(".fil-cat").click(function(){
+    selectedClass = $(this).attr("data-rel");
+     $("#portfolio").fadeTo(100, 0.1);
+    $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
+    }, 300);
 
     });
-
-    // Handle item click
-    $('.item').on('click', function() {
-
-      var full = $(this).attr('data-full');
-
-      toggleLightbox(full);
-
-      console.log(full);
-
     });
-
-    // Toggle lightbox
-    function toggleLightbox(url) {
-
-      if ($lightbox.is('.open')) {
-
-        $lightbox
-          .removeClass('open')
-          .fadeOut(200);
-
-      } else {
-
-        $figure.css('background-image', 'url(' + url + ')');
-        $lightbox
-          .addClass('open')
-          .fadeIn(200);
-
-      }
-
-    }
-
-    // Close
-    $lightbox.on('click', toggleLightbox);
-
-});
-
-});
-</script>
-</html>
+    </script>
+    </html>
