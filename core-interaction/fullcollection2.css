@@ -2,7 +2,7 @@ body{
   max-width: 900px;
   float: none;
   margin: auto;
-  background-color: white;
+  background-color: #white;
   font-family: helvetica;
 }
 #portfolio {
@@ -59,7 +59,7 @@ p:hover {
 }
 
 .btn {
-    font-family: Lato;
+    font-family: helvetica;
     font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
