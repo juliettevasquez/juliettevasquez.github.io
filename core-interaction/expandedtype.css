@@ -1,4 +1,10 @@
 body{
   background-color: red;
-  
+  font: helvetica;
+
+}
+
+#words{
+  color: #f23e2e;
+
 }
