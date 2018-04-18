@@ -8,7 +8,66 @@
   </head>
   <body>
 <div id="words">
-  flammable
+<div class="word1">
+    flammable
+  </div>
+  <div class="word2">
+    passion
+  </div>
+    <div class="word3">
+      danger
+    </div>
+    <div class="word4">
+      alert
 </div>
+<div class="word5">
+  heat
+</div>
+<div class="word6">
+  rage
+</div>
+<div class="word7">
+  vibrance
+</div>
+<div class="word8">
+  strength
+</div>
+<div class="word9">
+  action
+</div>
+<div class="word10">
+  determination
+</div>
+<div class="word11">
+  stress
+</div>
+<div class="word12">
+<div id="link">
+  <a href="typeorange.html">creativity
+  </a>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener("mousemove", handleMouseMove)
+
+function handleMouseMove(evt) {
+    //console.log(evt);
+
+    // 1. Find out where is secret word on the page
+
+    //    1.a. Select the secret word element and assign to a variable
+  var selecteditems = document.querySelector(".word12");
+    //    1.b. Get the x and y coordinates
+
+    var targetx= 907
+    var targety= 151
+    var xdistance= targetx-evt.pageX
+    var ydistance= targety-evt.pageY
+  console.log(xdistance,ydistance)
+  document.body.style.backgroundColor = "rgb(" + xdistance + "," + ydistance + ",10)"
+
+}
+</script>
   </body>
 </html>
