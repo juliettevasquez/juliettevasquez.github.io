@@ -1,0 +1,81 @@
+body{
+  background-color: #0dc623;
+}
+
+#words{
+  color: #0dc623;
+  font-size: 30px;
+  font-family: helvetica;
+}
+#words div:hover {
+  color: #b3ff96;
+}
+
+.word1{
+  position: relative;
+  top: 250px;
+  left: 60px;
+}
+
+.word2{
+  position: relative;
+  top:90px;
+  left:200px;
+}
+
+.word3{
+  position: relative;
+  top:200px;
+  left:400px;
+}
+
+.word4{
+  position: relative;
+  top: 450px;
+  left:300px;
+}
+.word5{
+  position: relative;
+  top: 390px;
+  left:800px;
+}
+.word6{
+  position: relative;
+  top: 350px;
+  left:570px;
+}
+.word7{
+  position: relative;
+  top: 210px;
+  left:380px;
+}
+.word8{
+  position: relative;
+  top: 120px;
+  left:880px;
+}
+.word9{
+  position: relative;
+  top: 190px;
+  left:70px;
+}
+.word10{
+  position: relative;
+
+  left:600px;
+  bottom: 100px;
+}
+.word11{
+  position: relative;
+  top: 50px;
+  left:600px;
+}
+
+.word12{
+  position: relative;
+  bottom:250px;
+  left:900px;
+}
+#words .word12:hover {
+  color:#0003e5;
+  
