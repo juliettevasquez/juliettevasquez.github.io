@@ -49,4 +49,44 @@
     </div>
   </div>
 </body>
+<script>
+
+function scale(input, min1, max1, min2, max2) {
+  var percent = (input - min1) / (max1 - min1);
+  var output = percent * (max2 - min2) + min2;
+  return Math.floor(output);
+}
+
+document.addEventListener("mousemove", handleMouseMove)
+
+function handleMouseMove(evt) {
+
+  var targetx= 907;
+  var targety= 151;
+  if(evt.pageX<targetx){
+        var xdistance= targetx-evt.pageX;
+        var g = scale(xdistance, targetx, 0, 106, 131);
+        var r = scale(xdistance, targetx, 0, 255, 255);
+
+    }
+  else {
+    var xdistance= evt.pageX-targetx;
+    var g = scale(xdistance, window.innerWidth-targetx, 0, 106, 131);
+    var r = scale(xdistance, window.innerWidth-targetx, 0, 255, 255);
+  }
+
+  if(evt.pageY<targety){
+        var ydistance= targety-evt.pageY;
+        var b = scale(ydistance, targety, 0, 0, 0);
+    }
+  else {
+    var ydistance= evt.pageY-targety;
+    var b = scale(ydistance, window.innerHeight-targety, 0, 0, 0);
+  }
+console.log("rgb(247," + g + "," + b + ")")
+
+  document.body.style.backgroundColor = "rgb("+ r +"," + g + "," + b + ")"
+
+}
+</script>
 </html>

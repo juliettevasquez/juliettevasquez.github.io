@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Green</title>
+    <title>Blue</title>
     <link rel="stylesheet"
-    href="typegreen.css"/>
+    href="typeblue.css"/>
   </head>
   <body>
 
@@ -13,41 +13,34 @@
       renewal
       </div>
       <div class="word2">
-        nature
+        confidence
       </div>
         <div class="word3">
-          growth
+          wisdom
         </div>
         <div class="word4">
-          harmony
+          water
     </div>
     <div class="word5">
-      fertility
+      tranquility
     </div>
     <div class="word6">
-      environment
+      air
     </div>
     <div class="word7">
-      money
+      depression
     </div>
     <div class="word8">
-      greed
+      saddness
     </div>
     <div class="word9">
-      natural
+      dynamic
     </div>
     <div class="word10">
-      ambition
-    </div>
-    <div class="word11">
-      stability
+      balanced
     </div>
     <div class="word12">
-      <div id="link">
-        <a href="typeblue.html">  sky
-        </a>
-      </div>
-
+      earth
     </div>
     </div>
 
@@ -69,23 +62,23 @@
     var targety= 151;
     if(evt.pageX<targetx){
           var xdistance= targetx-evt.pageX;
-          var g = scale(xdistance, targetx, 0, 198, 198);
-          var r = scale(xdistance, targetx, 0, 13, 12);
+          var g = scale(xdistance, targetx, 0, 28, 12);
+          var r = scale(xdistance, targetx, 0, 12, 111);
 
       }
     else {
       var xdistance= evt.pageX-targetx;
-      var g = scale(xdistance, window.innerWidth-targetx, 0, 198, 198);
-      var r = scale(xdistance, window.innerWidth-targetx, 0, 13, 12);
+      var g = scale(xdistance, window.innerWidth-targetx, 0, 28, 12);
+      var r = scale(xdistance, window.innerWidth-targetx, 0, 12, 111);
     }
 
     if(evt.pageY<targety){
           var ydistance= targety-evt.pageY;
-          var b = scale(ydistance, targety, 0, 35, 99);
+          var b = scale(ydistance, targety, 0, 198, 198);
       }
     else {
       var ydistance= evt.pageY-targety;
-      var b = scale(ydistance, window.innerHeight-targety, 0, 35, 99);
+      var b = scale(ydistance, window.innerHeight-targety, 0, 198, 198);
     }
   console.log("rgb(247," + g + "," + b + ")")
 

@@ -26,7 +26,7 @@ body{
 .word3{
   position: relative;
   top:200px;
-  left:400px;
+  left:450px;
 }
 
 .word4{
@@ -62,7 +62,7 @@ body{
 .word10{
   position: relative;
 
-  left:600px;
+  left:800px;
   bottom: 100px;
 }
 .word11{
@@ -73,8 +73,8 @@ body{
 
 .word12{
   position: relative;
-  bottom:250px;
-  left:900px;
+  bottom:210px;
+  left:400px;
 }
 #words .word12:hover {
   color: #ffdc00;
