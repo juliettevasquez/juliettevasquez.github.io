@@ -43,3 +43,6 @@ body{
 }
 .btn-group .button:not(:last-child) {
     border-bottom: none; }
+
+    a{text-decoration: none;
+    color: gray;}
